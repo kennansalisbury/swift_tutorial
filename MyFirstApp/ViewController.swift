@@ -10,6 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //image
+    @IBOutlet weak var imageView: UIImageView!
+    
+    //button action
+    @IBAction func buttonClicked(_ sender: Any) {
+        
+        //.image changes the image attribute for the imageView
+        // named: "string" pulls named image element from assets
+        imageView.image = UIImage(named: "taylor-2")
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
